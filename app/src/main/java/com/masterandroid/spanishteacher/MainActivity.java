@@ -20,9 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         MediaPlayer mediaPlayer = MediaPlayer.create(
                 this,
-                getResources().getIdentifier(buttonClicked.getTag().toString(),
-                "raw",
-                getPackageName()));
+                getResources().getIdentifier(buttonClicked.getTag().toString(),"raw",getPackageName()));
 
         mediaPlayer.start();
     }
